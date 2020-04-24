@@ -34,6 +34,7 @@ class Countries extends Component {
   }
   changeCountry = (e) => {
     const country = this.state.data.Countries.filter(c => c.Country === e.target.value)
+    console.log(c)
   }
 
 
