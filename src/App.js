@@ -5,22 +5,6 @@ import axios from 'axios'
 import { BrowserRouter, Route, Link, Switch} from 'react-router-dom'
 
 
-
-
-const CountryDataBoard = ({countryData}) => (
-  <React.Fragmen
-  t>
-    <p>TotalRecovered: {countryData.TotalRecovered}</p>
-      <p>TotalConfirmed: {countryData.TotalConfirmed}</p>
-      <p>TotalDeaths: {countryData.TotalDeaths}</p>
-      <p>NewConfirmed: {countryData.NewConfirmed}</p>
-      <p>NewRecovered: {countryData.NewRecovered}</p>
-      <p>NewDeaths: {countryData.NewDeaths}</p>
-  </React.Fragment>
-)
-
-
-
 function HomePage(){
   return(
     <GlobalState.Consumer>
