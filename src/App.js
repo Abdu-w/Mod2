@@ -30,10 +30,10 @@ class  GlobalContext  extends Component {
       console.log (error)
     })
   }
-  changeCountry = (e) => {
-    const country = this.state.data.Countries.filter(c => c.Country === e.target.value)
+  selectCountry = (countryName) => {
+        this.state.data.Countries.filter(countryData => countryData.Country === countryName)
     this.setState({
-      selectedCountry: country[0]
+      selectedCountryData: countryArr[0]
     })
   }
 
