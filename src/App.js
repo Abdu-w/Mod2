@@ -1,5 +1,4 @@
 
-MOD2
 import React, {Component } from 'react'
 import './App.css'
 import axios from 'axios'
@@ -33,6 +32,10 @@ class Countries extends Component {
       console.log (error)
     })
   }
+  changeCountry = (e) => {
+    const country = this.state.data.Countries.filter(c => c.Country === e.target.value)
+  }
+
 
 
   render() {
