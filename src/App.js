@@ -5,21 +5,6 @@ import axios from 'axios'
 import { BrowserRouter, Route, Link, Switch} from 'react-router-dom'
 
 
-function HomePage(){
-  return(
-    <GlobalState.Consumer>
-     {(context) => (
-       <React.Fragment>
-          <h2>Global Stats</h2>
-          <CountryDataBoard countryData={context.globalData} />
-       </React.Fragment>
-     )}
-   </GlobalState.Consumer>
-  )
-}
-
-
-
 class SingleCountry  extends Component{
 
   state ={
