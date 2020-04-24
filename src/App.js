@@ -2,6 +2,9 @@
 import React, {Component, createContext  } from 'react'
 import './App.css'
 import axios from 'axios'
+import { BrowserRouter, Route, Link, Switch} from 'react-router-dom'
+
+
 export const GlobalState = createContext()
 
 export default class  GlobalContext extends Component {
