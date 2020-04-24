@@ -47,6 +47,7 @@ class Countries extends Component {
           <p>TotalConfirmed: {globalData.TotalConfirmed}</p>
           <p>NewDeaths: {globalData.NewDeaths}</p>
           <p>TotalDeaths: {globalData.TotalDeaths}</p>
+          <p>NewRecovered: {globalData.NewRecovered}</p>
        
         </div>
 
