@@ -50,6 +50,13 @@ class  GlobalContext  extends Component {
     )}
 }
 
+function HomePage(){
+  return( 
+    <GlobalState.Consumer>
+   </GlobalState.Consumer>
+  )
+}
+
 
 
 
