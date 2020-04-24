@@ -87,6 +87,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         < GlobalContext />
+        < HomePage />
       </header>
     </div>
   );
