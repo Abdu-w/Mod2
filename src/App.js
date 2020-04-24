@@ -111,7 +111,8 @@ class SingleCountry  extends Component{
                this.state.nameOfCountry
                ? (
                  <div>
-          
+                   <h2>{this.state.nameOfCountry}</h2>
+                  
                  </div>
                )
                : <div>Select a counrty</div>
