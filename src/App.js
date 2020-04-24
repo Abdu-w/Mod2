@@ -7,6 +7,8 @@ class Countries extends Component {
     super(props);  
     this.state = {
       data: {},
+      globalData: {},
+      countries: []
   
     }
   }
