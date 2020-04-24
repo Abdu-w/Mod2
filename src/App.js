@@ -156,6 +156,7 @@ function App() {
         {/* < GlobalContext /> */}
         < HomePage />
         < SingleCountry/>
+        <Navbar />
       </header>
     </div>
   );
