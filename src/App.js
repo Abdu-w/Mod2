@@ -61,14 +61,12 @@ class Countries extends Component {
        
         </div>
         
-        <select
-        id="country"
-        onChange={}>  
-          <option>-</option> 
+        <select 
+          id="country"
+          onChange={this.changeCountry} >
+          <option>-</option>
           { countries.map(c => <option key={c.CountryCode} value={c}>{c}</option> )}
-
         </select>
-     
       </div>
   )}
 }
