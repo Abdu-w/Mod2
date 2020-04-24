@@ -65,6 +65,8 @@ class Countries extends Component {
         id="country"
         onChange={}>  
           <option>-</option> 
+          { countries.map(c => <option key={c.CountryCode} value={c}>{c}</option> )}
+
         </select>
      
       </div>
