@@ -36,6 +36,7 @@ class Countries extends Component {
 
 
   render() {
+    console.log(this.state)
     const { globalData } = this.state
 
     console.log(this.state)
