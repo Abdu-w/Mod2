@@ -78,6 +78,10 @@ function HomePage(){
 }
 class SingleCountry  extends Component{
 
+  state ={
+    nameOfCountry: '',
+  }
+
 
   render(){
     return( 
