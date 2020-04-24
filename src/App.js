@@ -76,7 +76,19 @@ function HomePage(){
    </GlobalState.Consumer>
   )
 }
+class SingleCountry  extends Component{
 
+
+  render(){
+    return( 
+      <GlobalState.Consumer>
+        {context => ( 
+         
+        )}
+      </GlobalState.Consumer>
+    )
+  }
+}
 
 
 
