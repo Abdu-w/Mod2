@@ -55,7 +55,9 @@ class Countries extends Component {
        
         </div>
         
-        <select>  </select>
+        <select>  
+          <option>-</option> 
+        </select>
      
       </div>
   )}
