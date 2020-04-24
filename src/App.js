@@ -70,7 +70,7 @@ function HomePage(){
      {(context) => (
        <React.Fragment>
           <h2>Global Stats</h2>
-          <CountryDataBoard />
+          <CountryDataBoard countryData={context.globalData} />
        </React.Fragment>
      )}
    </GlobalState.Consumer>
