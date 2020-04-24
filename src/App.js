@@ -48,9 +48,15 @@ class  GlobalContext  extends Component {
           </GlobalState.Provider>
         </div>
     )}
-  
-
 }
+
+
+
+
+
+
+
+
 
 
 function App() {
