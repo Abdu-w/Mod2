@@ -22,8 +22,8 @@ export default class SingleCountry  extends Component{
         // getting state from the context 
         <GlobalState.Consumer>
           {context => ( 
-            <React.Fragment>
-
+            <React.Fragment >
+            <div className='single-country-body'>
              <select 
                 className='slelect-button'
                 id="country"
@@ -46,13 +46,14 @@ export default class SingleCountry  extends Component{
             // when the name of country is a name/true render the country board component passed in the data from conexts : dropdown = all country names
                 this.state.nameOfCountry
                 ? (
-                  <div>
+                  <div className='single-country-data'>
                     <h2>{this.state.nameOfCountry}</h2>
-                    <CountryDataBoard countryData={context.selectedCountryData} />
+                    <CountryDataBoard  countryData={context.selectedCountryData} />
                   </div>
                 )
-                : <div>Select a counrty</div>
+                : <div className='slelect-button-title'>Select a counrty</div>
               } 
+            </div>  
             </React.Fragment>
           )}
         </GlobalState.Consumer>

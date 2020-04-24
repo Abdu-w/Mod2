@@ -1,4 +1,5 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+import FooterFiller from './FooterFiller'
 
 
 
@@ -28,24 +29,5 @@ function Footer(){
 
 
 
-  function FooterFiller(){
-    return(
-      <Fragment>
-        <div className='footer-subs-container'>
-          <div className='footer-subs'>
-            <p>More news on covid-19</p>
-  
-            <input 
-              className='email' 
-              type="email" 
-              name="email" 
-              placeholder='email'
-              />
-          </div>
-  
-      
-      </div>
-   </Fragment>
-    )}
   
 export default Footer;
