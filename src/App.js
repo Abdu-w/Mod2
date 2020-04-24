@@ -32,5 +32,10 @@ function App() {
 }
 
 export default App;
+//Sources:
 
+//router
+//https://www.youtube.com/watch?v=QUz3k2O3ZJU
 
+// contexts:
+//https://www.youtube.com/watch?v=XLJN4JfniH4
