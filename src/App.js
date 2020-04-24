@@ -51,10 +51,20 @@ export default class  GlobalContext extends Component {
   )}
 }
 
+const CountryDataBoard = ({countryData}) => (
+  <React.Fragment>
+    <p>TotalRecovered: {countryData.TotalRecovered}</p>
+  </React.Fragment>
+)
+
 
 function HomePage(){
   return( 
     <GlobalState.Consumer>
+       {(context) => (
+            <h2>Global Stats</h2>
+        
+       )}
    </GlobalState.Consumer>
   )
 }
