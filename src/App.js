@@ -20,6 +20,8 @@ class Countries extends Component {
          
         })
         console.log(this.state.data)
+        this.state.data.Countries.map((count, id) => {
+        console.log(this.state.data.Countries[id].Country)
       
       
          
