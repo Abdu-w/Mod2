@@ -12,17 +12,20 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <GlobalContext>
-        <BrowserRouter>
-            <Navbar /> 
+      <header className="App-header">
+        <GlobalContext>
+          <BrowserRouter>
+              <Navbar /> 
 
-            <Switch>
-              <Route path ='/global' component={HomePage} /> 
-              <Route path ='/country' component={SingleCountry} />
-            </Switch>
-        </BrowserRouter> 
-      </GlobalContext>
-      < Footer />
+              <Switch>
+                {/* <Route path = '/' component = {} /> */}
+                <Route path ='/global' component={HomePage} /> 
+                <Route path ='/country' component={SingleCountry} />
+              </Switch>
+          </BrowserRouter> 
+        </GlobalContext>
+       < Footer />
+     </header>
     </div>               
     
   );
