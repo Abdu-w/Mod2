@@ -18,6 +18,9 @@ function App() {
           <BrowserRouter>
               <Navbar /> 
 
+              <Switch>
+               
+              </Switch>
           </BrowserRouter> 
         </GlobalContext>
        < Footer />
