@@ -96,6 +96,7 @@ class SingleCountry  extends Component{
             <select 
                id="country"
                onChange={(e) => {
+                this.filterCountry(e.target.value)
                  context.selectCountry(e.target.value)
                }} >
                <option>-</option>
