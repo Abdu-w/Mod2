@@ -76,11 +76,17 @@ function HomePage(){
    </GlobalState.Consumer>
   )
 }
+
+
+
 class SingleCountry  extends Component{
 
   state ={
     nameOfCountry: '',
   }
+
+
+  
   filterCountry = (country) => { 
     this.setState({
       nameOfCountry: country,
@@ -88,47 +94,41 @@ class SingleCountry  extends Component{
   }
 
   render(){
-    return( 
+    return(
       <GlobalState.Consumer>
         {context => ( 
-            <React.Fragment>
+          <React.Fragment>
 
-            <select 
-               id="country"
-               onChange={(e) => {
+           <select 
+              id="country"
+              onChange={(e) => {
                 this.filterCountry(e.target.value)
-                 context.selectCountry(e.target.value)
-               }} >
-               <option>-</option>
-               { 
-                 
-                 context.countries.map((countryName,index) => 
-                   <option key={index} value={countryName}>{countryName}</option>
-                 )
-               }
-             </select>
-             {
-               this.state.nameOfCountry
-               ? (
-                 <div>
-                   <h2>{this.state.nameOfCountry}</h2>
-                   <CountryDataBoard countryData={context.selectedCountryData} />
-                 </div>
-               )
-               : <div>Select a counrty</div>
-
-             }
-     
-            
-           </React.Fragment>
-          
-         
+                context.selectCountry(e.target.value)
+              }} >
+              <option>-</option>
+              { 
+                context.countries.map((countryName,index) => 
+                  <option key={index} value={countryName}>{countryName}</option>
+                )
+              }
+            </select>
+    
+            { 
+              this.state.nameOfCountry
+              ? (
+                <div>
+                  <h2>{this.state.nameOfCountry}</h2>
+                  <CountryDataBoard countryData={context.selectedCountryData} />
+                </div>
+              )
+              : <div>Select a counrty</div>
+            } 
+          </React.Fragment>
         )}
       </GlobalState.Consumer>
     )
   }
 }
-
 
 
 
