@@ -5,56 +5,6 @@ import axios from 'axios'
 import { BrowserRouter, Route, Link, Switch} from 'react-router-dom'
 
 
-class SingleCountry  extends Component{
-
-  state ={
-    nameOfCountry: '',
-  }
-
-
-  
-  filterCountry = (country) => { 
-    this.setState({
-      nameOfCountry: country,
-    })
-  }
-
-  render(){
-    return(
-      <GlobalState.Consumer>
-        {context => ( 
-          <React.Fragment>
-
-           <select 
-              id="country"
-              onChange={(e) => {
-                this.filterCountry(e.target.value)
-                context.selectCountry(e.target.value)
-              }} >
-              <option>-</option>
-              { 
-                context.countries.map((countryName,index) => 
-                  <option key={index} value={countryName}>{countryName}</option>
-                )
-              }
-            </select>
-    
-            { 
-              this.state.nameOfCountry
-              ? (
-                <div>
-                  <h2>{this.state.nameOfCountry}</h2>
-                  <CountryDataBoard countryData={context.selectedCountryData} />
-                </div>
-              )
-              : <div>Select a counrty</div>
-            } 
-          </React.Fragment>
-        )}
-      </GlobalState.Consumer>
-    )
-  }
-}
 
 function Navbar(){
   return (
