@@ -1,0 +1,60 @@
+{
+    "Global": {
+    "NewConfirmed": 70653,
+    "TotalConfirmed": 2464856,
+    "NewDeaths": 5537,
+    "TotalDeaths": 161613,
+    "NewRecovered": 28368,
+    "TotalRecovered": 667724
+    },
+    "Countries": [
+    {
+    "Country": "ALA Aland Islands",
+    "CountryCode": "AX",
+    "Slug": "ala-aland-islands",
+    "NewConfirmed": 0,
+    "TotalConfirmed": 0,
+    "NewDeaths": 0,
+    "TotalDeaths": 0,
+    "NewRecovered": 0,
+    "TotalRecovered": 0,
+    "Date": "2020-04-23T02 19:35Z"
+    },
+    {
+    "Country": "Afghanistan",
+    "CountryCode": "AF",
+    "Slug": "afghanistan",
+    "NewConfirmed": 84,
+    "TotalConfirmed": 1176,
+    "NewDeaths": 4,
+    "TotalDeaths": 40,
+    "NewRecovered": 16,
+    "TotalRecovered": 166,
+    "Date": "2020-04-23T02 :19:35Z"
+    },
+    {
+    "Country": "Albania",
+    "CountryCode": "AL",
+    "Slug": "albania",
+    "NewConfirmed": 25,
+    "TotalConfirmed": 634,
+    "NewDeaths": 1,
+    "TotalDeaths": 27,
+    "NewRecovered": 11,
+    "TotalRecovered": 356,
+    "Date": "2020-04-23T02 19:35Z"
+    },
+    {
+    "Country": "Algeria",
+    "CountryCode": "DZ",
+    "Slug": "algeria",
+    "NewConfirmed": 99,
+    "TotalConfirmed": 2910,
+    "NewDeaths": 10,
+    "TotalDeaths": 402,
+    "NewRecovered": 52,
+    "TotalRecovered": 1204,
+    "Date": "2020-04-23T02:19:35Z"
+    }
+    ]
+}
