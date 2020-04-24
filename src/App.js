@@ -2,8 +2,9 @@
 import React, {Component, createContext  } from 'react'
 import './App.css'
 import axios from 'axios'
+export const GlobalState = createContext()
 
-class  GlobalContext  extends Component {
+export default class  GlobalContext extends Component {
   state = {
     data: {},
     globalData: {},
@@ -11,26 +12,21 @@ class  GlobalContext  extends Component {
     selectedCountryData: {},
   }
   
-  
   componentDidMount() {
-      axios.get(`https://api.covid19api.com/summary`).then(res => {
-        this.setState({
-          data: res.data,
-          countries: res.data.Countries.map(c => c.Country),
-          globalData: res.data.Global
-        })
-        console.log(this.state.data)
-        // this.state.data.Countries.map((count, id) => {
-        //   console.log(this.state.data.Countries[id].Country)
-        //   })
-      
-         
-      ;
+    axios.get(`https://api.covid19api.com/summary-`).then(res => {
+      this.setState({
+        data: res.data,   
+        countries: res.data.Countries.map(countryData => countryData.Country),
+        globalData: res.data.Global
+      })
+    ;
     }).catch(error => {
       console.log (error)
     })
   }
+
   selectCountry = (countryName) => {
+    const countryArr = 
         this.state.data.Countries.filter(countryData => countryData.Country === countryName)
     this.setState({
       selectedCountryData: countryArr[0]
@@ -38,17 +34,23 @@ class  GlobalContext  extends Component {
   }
 
 
-
   render() {
-    render() 
-      return (
-        <div className='context'>
-          <GlobalState.Provider value={context}>
-              { this.props.children }
-          </GlobalState.Provider>
-        </div>
-    )}
+    const context = {
+      globalData: this.state.globalData, 
+      countries: this.state.countries,
+      selectedCountryData: this.state.selectedCountryData,
+      selectCountry: this.selectCountry,
+    }
+
+    return (
+      <div className='App'>
+        <GlobalState.Provider value={context}>
+            { this.props.children }
+        </GlobalState.Provider>
+      </div>
+  )}
 }
+
 
 function HomePage(){
   return( 
