@@ -40,33 +40,16 @@ class  GlobalContext  extends Component {
 
 
   render() {
-    console.log(this.state)
-    const { globalData } = this.state
-
-    console.log(this.state)
-    return (
-      <div className='App'>
-        <h1>hello</h1>
-        <div>
-          <h2>Global</h2>
-          <p>NewConfirmed: {globalData.NewConfirmed}</p>
-          <p>TotalConfirmed: {globalData.TotalConfirmed}</p>
-          <p>NewDeaths: {globalData.NewDeaths}</p>
-          <p>TotalDeaths: {globalData.TotalDeaths}</p>
-          <p>NewRecovered: {globalData.NewRecovered}</p>
-          <p>TotalRecovered: {globalData.TotalRecovered}</p>
-          
-       
+    render() 
+      return (
+        <div className='context'>
+          <GlobalState.Provider value={context}>
+              { this.props.children }
+          </GlobalState.Provider>
         </div>
-        
-        <select 
-          id="country"
-          onChange={this.changeCountry} >
-          <option>-</option>
-          { countries.map(c => <option key={c.CountryCode} value={c}>{c}</option> )}
-        </select>
-      </div>
-  )}
+    )}
+  
+
 }
 
 
