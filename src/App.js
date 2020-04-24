@@ -36,7 +36,8 @@ class Countries extends Component {
 
 
   render() {
-  
+    const { globalData } = this.state
+
     console.log(this.state)
     return (
       <div className='App'>
