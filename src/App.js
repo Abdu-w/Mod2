@@ -5,57 +5,11 @@ import axios from 'axios'
 import { BrowserRouter, Route, Link, Switch} from 'react-router-dom'
 
 
-export const GlobalState = createContext()
 
-export default class  GlobalContext extends Component {
-  state = {
-    data: {},
-    globalData: {},
-    countries: [],
-    selectedCountryData: {},
-  }
-  
-  componentDidMount() {
-    axios.get(`https://api.covid19api.com/summary-`).then(res => {
-      this.setState({
-        data: res.data,   
-        countries: res.data.Countries.map(countryData => countryData.Country),
-        globalData: res.data.Global
-      })
-    ;
-    }).catch(error => {
-      console.log (error)
-    })
-  }
-
-  selectCountry = (countryName) => {
-    const countryArr = 
-        this.state.data.Countries.filter(countryData => countryData.Country === countryName)
-    this.setState({
-      selectedCountryData: countryArr[0]
-    })
-  }
-
-
-  render() {
-    const context = {
-      globalData: this.state.globalData, 
-      countries: this.state.countries,
-      selectedCountryData: this.state.selectedCountryData,
-      selectCountry: this.selectCountry,
-    }
-
-    return (
-      <div className='App'>
-        <GlobalState.Provider value={context}>
-            { this.props.children }
-        </GlobalState.Provider>
-      </div>
-  )}
-}
 
 const CountryDataBoard = ({countryData}) => (
-  <React.Fragment>
+  <React.Fragmen
+  t>
     <p>TotalRecovered: {countryData.TotalRecovered}</p>
       <p>TotalConfirmed: {countryData.TotalConfirmed}</p>
       <p>TotalDeaths: {countryData.TotalDeaths}</p>
