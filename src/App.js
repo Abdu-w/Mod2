@@ -15,7 +15,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <GlobalContext>
-         
+          <BrowserRouter>
+             
+          </BrowserRouter> 
         </GlobalContext>
        < Footer />
      </header>
