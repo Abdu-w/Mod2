@@ -4,15 +4,13 @@ import './App.css'
 import axios from 'axios'
 
 class  GlobalContext  extends Component {
-  constructor(props) {
-    super(props);  
-    this.state = {
-      data: {},
-      globalData: {},
-      countries: [],
-      selectedCountry: {}
-    }
+  state = {
+    data: {},
+    globalData: {},
+    countries: [],
+    selectedCountryData: {},
   }
+  
   
   componentDidMount() {
       axios.get(`https://api.covid19api.com/summary`).then(res => {
