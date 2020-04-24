@@ -36,6 +36,7 @@ class Countries extends Component {
 
 
   render() {
+  
     console.log(this.state)
     return (
       <div className='App'>
@@ -43,7 +44,9 @@ class Countries extends Component {
         <div>
           <h2>Global</h2>
           <p>NewConfirmed: {globalData.NewConfirmed}</p>
-      
+          <p>TotalConfirmed: {globalData.TotalConfirmed}</p>
+          <p>NewDeaths: {globalData.NewDeaths}</p>
+       
         </div>
 
       
