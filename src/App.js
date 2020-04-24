@@ -86,7 +86,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        < GlobalContext />
+        {/* < GlobalContext /> */}
         < HomePage />
       </header>
     </div>
