@@ -153,6 +153,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <BrowserRouter></BrowserRouter>
         {/* < GlobalContext /> */}
         < HomePage />
         < SingleCountry/>
