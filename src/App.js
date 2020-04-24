@@ -18,6 +18,7 @@ class Countries extends Component {
         this.setState({
           data: res.data,
           countries: res.data.Countries.map(c => c.Country),
+          globalData: res.data.Global
          
         })
         console.log(this.state.data)
@@ -39,6 +40,7 @@ class Countries extends Component {
    
     return (
       <div>
+      
 
   
       </div>
