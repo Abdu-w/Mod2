@@ -112,7 +112,7 @@ class SingleCountry  extends Component{
                ? (
                  <div>
                    <h2>{this.state.nameOfCountry}</h2>
-                  
+                   <CountryDataBoard countryData={context.selectedCountryData} />
                  </div>
                )
                : <div>Select a counrty</div>
