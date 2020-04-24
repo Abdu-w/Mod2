@@ -63,21 +63,19 @@ const CountryDataBoard = ({countryData}) => (
 )
 
 
+
 function HomePage(){
-  return( 
+  return(
     <GlobalState.Consumer>
-       {(context) => (
-         <React.Fragment>
-            <h2>Global Stats</h2>           
-      <p>TotalRecovered: {context.globalData.TotalRecovered}</p>
-      <p>TotalConfirmed: {context.globalData.TotalConfirmed}</p>
-   
-         </React.Fragment>
-       )}
+     {(context) => (
+       <React.Fragment>
+          <h2>Global Stats</h2>
+          {/* <CountryDataBoard /> */}
+       </React.Fragment>
+     )}
    </GlobalState.Consumer>
   )
 }
-
 
 
 
