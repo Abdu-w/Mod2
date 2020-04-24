@@ -49,7 +49,7 @@ export default class  GlobalContext extends Component {
     }
 
     return (
-      <div className='globalContext'>
+      <div className='global-context'>
         <GlobalState.Provider value={context}>
             { this.props.children }
         </GlobalState.Provider>

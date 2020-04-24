@@ -25,6 +25,7 @@ export default class SingleCountry  extends Component{
             <React.Fragment>
 
              <select 
+                className='slelect-button'
                 id="country"
                 onChange={(e) => {
                   // e.target.value ==> countryName ==> this changes state
