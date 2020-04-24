@@ -82,7 +82,9 @@ class SingleCountry  extends Component{
     nameOfCountry: '',
   }
   filterCountry = (country) => { 
-   
+    this.setState({
+    
+    })
   }
 
   render(){
