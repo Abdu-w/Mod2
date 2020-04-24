@@ -62,8 +62,10 @@ function HomePage(){
   return( 
     <GlobalState.Consumer>
        {(context) => (
+         <React.Fragment>
             <h2>Global Stats</h2>
-        
+
+         </React.Fragment>
        )}
    </GlobalState.Consumer>
   )
