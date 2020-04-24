@@ -83,7 +83,7 @@ class SingleCountry  extends Component{
   }
   filterCountry = (country) => { 
     this.setState({
-    
+      nameOfCountry: country,
     })
   }
 
