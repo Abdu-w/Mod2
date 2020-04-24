@@ -137,6 +137,7 @@ function Navbar(){
   return (
     <div className='nav'>
        <ul>
+       <li><Link to=''>Global Status</Link></li>
         </ul>
     </div>
   )
