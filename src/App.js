@@ -54,6 +54,7 @@ export default class  GlobalContext extends Component {
 const CountryDataBoard = ({countryData}) => (
   <React.Fragment>
     <p>TotalRecovered: {countryData.TotalRecovered}</p>
+      <p>TotalConfirmed: {countryData.TotalConfirmed}</p>
     
   </React.Fragment>
 )
