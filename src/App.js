@@ -3,7 +3,7 @@ import React, {Component, createContext  } from 'react'
 import './App.css'
 import axios from 'axios'
 
-class Countries extends Component {
+class  GlobalContext  extends Component {
   constructor(props) {
     super(props);  
     this.state = {
