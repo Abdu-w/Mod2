@@ -119,6 +119,9 @@ li{
 /* ------------SingleCountry */
 .single-country-body{
   padding: 15%;
+  background-image: url('./img/covid3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slelect-button{
   color:rgb(44, 43, 43);
@@ -126,19 +129,30 @@ li{
   position:relative;
   top:-130px;
   margin-bottom: 0em;
+  
 }
 .slelect-button-title{
-  color:rgb(44, 43, 43);
+  color:rgb(39, 38, 38);
   position:relative;
   top:-180px;
+  font-size: 12;
+  font-weight: 800;
 
 }
 .single-country-data{
   position:relative;
   top:-100px;
+  color:rgb(36, 35, 35);
+  font-weight: 900;
+  font-size: larger;
+  font-display: bolder;
+
 }
 
 .global-data{
   padding:8%;
   position:relative;
+  background-image: url('./img/covid2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
