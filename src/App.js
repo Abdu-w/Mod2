@@ -130,6 +130,12 @@ class SingleCountry  extends Component{
   }
 }
 
+function Navbar(){
+  return (
+    <div className='nav'>
+    </div>
+  )
+}
 
 
 
