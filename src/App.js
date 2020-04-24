@@ -56,6 +56,8 @@ const CountryDataBoard = ({countryData}) => (
     <p>TotalRecovered: {countryData.TotalRecovered}</p>
   </React.Fragment>
 )
+const CountryDataBoard = () => ()
+
 
 
 function HomePage(){
