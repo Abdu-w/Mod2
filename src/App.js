@@ -19,7 +19,8 @@ function App() {
               <Navbar /> 
 
               <Switch>
-               
+                <Route path ='/global' component={HomePage} /> 
+                <Route path ='/country' component={SingleCountry} />
               </Switch>
           </BrowserRouter> 
         </GlobalContext>
