@@ -57,7 +57,7 @@ const CountryDataBoard = ({countryData}) => (
       <p>TotalConfirmed: {countryData.TotalConfirmed}</p>
       <p>TotalDeaths: {countryData.TotalDeaths}</p>
       <p>NewConfirmed: {countryData.NewConfirmed}</p>
-    
+      <p>NewRecovered: {countryData.NewRecovered}</p>
   </React.Fragment>
 )
 
