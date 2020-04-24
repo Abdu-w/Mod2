@@ -142,6 +142,7 @@ function App() {
       <header className="App-header">
         {/* < GlobalContext /> */}
         < HomePage />
+        < SingleCountry/>
       </header>
     </div>
   );
