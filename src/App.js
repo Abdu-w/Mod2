@@ -87,6 +87,10 @@ class SingleCountry  extends Component{
     return( 
       <GlobalState.Consumer>
         {context => ( 
+            <React.Fragment>
+
+           </React.Fragment>
+          
          
         )}
       </GlobalState.Consumer>
