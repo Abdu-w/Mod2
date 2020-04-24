@@ -16,7 +16,8 @@ function App() {
       <header className="App-header">
         <GlobalContext>
           <BrowserRouter>
-             
+              <Navbar /> 
+
           </BrowserRouter> 
         </GlobalContext>
        < Footer />
