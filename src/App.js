@@ -158,7 +158,9 @@ function App() {
         < HomePage />
         < SingleCountry/>
         <Navbar />
-        <Switch></Switch>
+        <Switch>
+          
+        </Switch>
         
         
         </BrowserRouter>
