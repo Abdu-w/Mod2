@@ -8,6 +8,7 @@ class Countries extends Component {
     this.state = {
       data: {},
       globalData: {},
+      selectedCountry: {}
   
     }
   }
