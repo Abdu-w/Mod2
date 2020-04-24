@@ -17,6 +17,7 @@ class Countries extends Component {
       axios.get(`https://api.covid19api.com/summary`).then(res => {
         this.setState({
           data: res.data,
+          countries: res.data.Countries.map(c => c.Country),
          
         })
         console.log(this.state.data)
