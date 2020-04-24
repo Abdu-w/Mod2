@@ -89,6 +89,21 @@ class SingleCountry  extends Component{
         {context => ( 
             <React.Fragment>
 
+            <select 
+               id="country"
+               onChange={(e) => {
+                 context.selectCountry(e.target.value)
+               }} >
+               <option>-</option>
+               { 
+                 
+                 context.countries.map((countryName,index) => 
+                   <option key={index} value={countryName}>{countryName}</option>
+                 )
+               }
+             </select>
+     
+            
            </React.Fragment>
           
          
