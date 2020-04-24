@@ -161,6 +161,7 @@ function App() {
         <Switch>
         <Route path ='/global' component={HomePage} /> 
             <Route path ='/country' component={SingleCountry} />
+            <Route path ='/country' component={SingleCountry} />
 
         </Switch>
         
