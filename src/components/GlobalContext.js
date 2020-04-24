@@ -14,7 +14,7 @@ export default class  GlobalContext extends Component {
   }
   
   componentDidMount() {
-    axios.get(`https://api.covid19api.com/summary-`).then(res => {
+    axios.get(`https://api.covid19api.com/summary`).then(res => {
       this.setState({
         data: res.data,
         //loop through array of countries and get the names uing .method
