@@ -64,7 +64,7 @@ function HomePage(){
        {(context) => (
          <React.Fragment>
             <h2>Global Stats</h2>
-
+            {context.globalData.TotalRecovered}
          </React.Fragment>
        )}
    </GlobalState.Consumer>
