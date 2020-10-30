@@ -8,6 +8,9 @@
 ## 2 stateful componets : Search for country, Gobal figures 
 ## 5 stateless component: Navbar, footer, 3-4 data tables 
 
+##Link :
+https://covid-19-tracker-ba2c1.web.app
+
 ## Wire Frame
 
 ![wireframe](/wireframe.png)
